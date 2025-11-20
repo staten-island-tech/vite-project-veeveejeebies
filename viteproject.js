@@ -13,7 +13,7 @@ const movies = [
         alt:
     },
      { 
-        name: "Until Dawn",
+        name: "Annabelle",
         category: "Horror",
         image:
         alt:
@@ -74,55 +74,30 @@ const movies = [
     },
      { 
         name: "Spiderman",
-        category: 
+        category: "Superhero",
         image:
         alt:
     },
      { 
-        name: 
-        category:
+        name: "Iron Man",
+        category: "Superhero",
         image:
         alt:
     },
      { 
-        name: 
-        category:
+        name: "Avengers: Infinity War",
+        category: "Superhero",
         image:
         alt:
     },
      { 
-        name: 
-        category:
+        name: "Avengers: Endgame",
+        category: "Superhero",
         price:
         image:
         alt:
     },
-     { 
-        name: 
-        category:
-        price:
-        image:
-        alt:
-    },
-     { 
-        name: 
-        category:
-        price:
-        image:
-        alt:
-    },
-     { 
-        name: 
-        category:
-        price:
-        image:
-        alt:
-    },
-     { 
-        name: 
-        category:
-        price:
-        image:
-        alt:
-    },
+  
+ 
+   
 ];
