@@ -12,8 +12,7 @@ h1 {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
   font-size: 60px;
-  color: rgb(59, 5, 5);
-  margin-top: 0;
+  color: #a9232e
 }
 
 h2 {
@@ -78,4 +77,115 @@ html, body {
 .cart-total p {
   margin-bottom: 5px;
   font-size: large;
+}
+
+.all {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.horror {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+     font-family: "Creepster", system-ui;
+  font-weight: 400;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.disney {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.pixar {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.super {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.addCart {
+  background-color: #d40000; 
+    border-color: #3f0000;
+    color: rgb(255, 180, 180); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.addCart:hover {
+  background-color: #a00000;
+  transition: ease-in;
+}
+.all:hover {
+  background-color: #a00000;
+  transition: ease-in;
+}
+.horror:hover {
+  background-color: #a00000;
+  transition: ease-in;
+}
+.disney:hover {
+  background-color: #a00000;
+  transition: ease-in;
+}
+.pixar:hover {
+  background-color: #a00000;
+  transition: ease-in;
+}
+.super:hover {
+  background-color: #a00000;
+  transition: ease-in;
 }
