@@ -101,14 +101,16 @@ function displayItems(list) {
       <img src="${movie.image}" alt="${movie.alt}" class="poster">
 
       <div class="buttons">
-        <button class="addCart">Add to Watchlist</button>
-        <button class="addCart">Already Watched</button>
+        <button class="addMovie">Add to Watchlist</button>
+        <button class="addMovie">Already Watched</button>
       </div>
   </div>
   `
 );
   });
 }
+
+const addWatch = document.querySelector("addMovie");
 
 displayItems(movies);
 
@@ -119,3 +121,7 @@ function filter(category) {
 function showAll() {
   displayItems(movies);
 }
+
+buttons.forEach((btn, viteproject)) =>  (
+  btn.addEventListener
+)

@@ -1,11 +1,23 @@
-.title {
-  background-color: rgb(216, 155, 240);
+html, body {
   text-align: center;
-  width: 1000px;
-  margin: 100px auto;
-  padding: 0px;
-  font-size: 50px;
-  font-family: "Kranky", serif;
+  box-sizing: border-box;
+  font-family: "Sigmar", sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(24, 21, 21);
+}
+ 
+:root {
+  --blood: #7a000a
+}
+
+
+.title {
+  font-family: "Sigmar", sans-serif;
+  padding-bottom: 10px;
+  font-size: 45px;
+  color: #7a000a
 }
 
 h1 {
@@ -24,17 +36,6 @@ h2 {
   margin-top: 0;
 }
 
-.child {
-  border: 5px solid rgb(213, 162, 234);
-  width: 22%;
-  height: auto;
-  text-align: center;
-  background-color: rgb(251, 204, 255);
-  margin: 15px;
-  border-radius: 20px;
-  display: inline-block;
-  vertical-align: top;
-}
 
 img {
   width: 25%;
@@ -45,33 +46,11 @@ img {
 }
 
 
-html, body {
-  text-align: center;
-  box-sizing: border-box;
-  font-family: "Sigmar", sans-serif;
-  font-size: 62.5%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(24, 21, 21);
-}
+
 
 .container {
   width: 100%;
   text-align: center;
-}
-
-.cart-total {
-  border: 1px solid #f4beff;
-  padding: 15px;
-  margin-top: 20px;
-  background-color: #f4d1ff;
-}
-.cart-total h1 {
-  margin-bottom: 10px;
-}
-.cart-total p {
-  margin-bottom: 5px;
-  font-size: large;
 }
 
 .all {
@@ -158,7 +137,7 @@ html, body {
     border-radius: 50px; 
     transition: background-color 0.5s ease;
 }
-.addCart {
+.addMovie {
     background-color: #d40000; 
     border-color: #3f0000;
     color: rgb(255, 180, 180); 
