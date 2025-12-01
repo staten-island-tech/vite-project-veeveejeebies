@@ -5,11 +5,19 @@ html, body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
-  background-color: rgb(24, 21, 21);
+  background-color: #181515;
 }
  
 :root {
-  --blood: #7a000a
+  --blood-red: #7a000a;
+  --maroon: #c77a7a;
+  --bright-red: #c70000;
+  --black: #181515;
+  --salmon: #ffb4b4;
+
+  /* Intentions */
+  --primary: var(--blood-red);
+  --secondary: var(--maroon);
 }
 
 
@@ -17,7 +25,7 @@ html, body {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
   font-size: 45px;
-  color: #7a000a
+  color: var(--blood-red)
 }
 
 h1 {
@@ -32,7 +40,7 @@ h2 {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
   font-size: 30px;
-  color: rgb(212, 136, 136);
+  color: var(--maroon); 
   margin-top: 0;
 }
 
@@ -56,7 +64,7 @@ img {
 .all {
   background-color: #d40000; 
     border-color: #3f0000;
-    color: rgb(255, 180, 180); 
+    color: #ffb4b4; 
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 

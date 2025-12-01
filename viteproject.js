@@ -122,6 +122,3 @@ function showAll() {
   displayItems(movies);
 }
 
-buttons.forEach((btn, viteproject)) =>  (
-  btn.addEventListener
-)
