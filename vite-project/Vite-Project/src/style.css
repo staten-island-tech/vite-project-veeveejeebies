@@ -7,7 +7,7 @@ html, body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
-  background-color: #181515;
+  
 }
 :root {
   --blood-red: #7a000a;
@@ -17,6 +17,8 @@ html, body {
   --button-color: #d40000;
   --white: #f6f5f5;
   --light-pink: #fcbfbf;
+  --button-border: #3f0000;
+  --amazing: #fedcee;
 
   --primary: var(--black);
   --secondary: var(--maroon);
@@ -24,12 +26,14 @@ html, body {
 
 .cool {
   --primary: var(--black);
-  --secondary: var(--blood-red);
+  --secondary: var(--button-color);
+  --button-border: var(--button-border)
 }
 
 .warm {
   --primary: var(--white);
   --secondary: var(--light-pink);
+  --button-border:var(var(--amazing));
 }
 
 .hero {
@@ -45,7 +49,8 @@ html, body {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
   font-size: 45px;
-  color: var(--blood-red);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 h1 {
@@ -53,7 +58,8 @@ h1 {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
   font-size: 100px;
-  color: var(--blood-red);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 h2 {
@@ -82,21 +88,41 @@ img {
 }
 
 .all {
-  background-color: #d40000; 
+  background-color: var(--secondary);
+  color: var(--primary); 
     border-color: #3f0000;
-    color: #ffb4b4; 
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-    font-family: "Sigmar", sans-serif;
+     font-family: "Creepster";
+    font-weight: 400px;
+    font-style: normal;
     margin: 4px 2px; 
     cursor: pointer; 
     border-radius: 50px; 
     transition: background-color 0.5s ease;
 }
 .horror {
+  background-color: var(--secondary);
+  color: var(--primary); 
+     --button-border: var(--primary);
+     
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 25px; 
+     font-family: "Creepster";
+    font-weight: 400px;
+    font-style: normal;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.disney {
   background-color: var(--secondary);
   color: var(--primary); 
     border-color: #3f0000;
@@ -114,35 +140,18 @@ img {
     border-radius: 50px; 
     transition: background-color 0.5s ease;
 }
-.disney {
-  background-color: #d40000; 
-    border-color: #3f0000;
-    color: rgb(255, 180, 180); 
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
-      font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
-
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
-    transition: background-color 0.5s ease;
-}
 .pixar {
-  background-color: #d40000; 
+  background-color: var(--secondary);
+  color: var(--primary); 
     border-color: #3f0000;
-    color: rgb(255, 180, 180); 
+     
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-    font-family: "Mouse Memoirs", sans-serif;
-    font-weight: 400;
+     font-family: "Creepster";
+    font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
     cursor: pointer; 
@@ -150,16 +159,17 @@ img {
     transition: background-color 0.5s ease;
 }
 .super {
-  background-color: #d40000; 
+  background-color: var(--secondary);
+  color: var(--primary); 
     border-color: #3f0000;
-    color: rgb(255, 180, 180); 
+     
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
+     font-family: "Creepster";
+    font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
     cursor: pointer; 

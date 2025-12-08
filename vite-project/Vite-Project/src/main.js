@@ -109,7 +109,7 @@ function displayItems(list) {
       `
         <div class="item">
           <h1 class="title">${movie.name}</h1>
-          <img src="${movie.image}" alt="${movie.alt}" class="poster">
+          <img src="${movie.image}" alt="${movie.alt}">
           <div class="buttons">
             <button class="addMovie">Add to Watchlist</button>
             <button class="addMovie">Already Watched</button>
@@ -119,19 +119,6 @@ function displayItems(list) {
     );
   });
 }
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
-});
-
-window.filter = filter;
-window.showAll = showAll;
-
 
 displayItems(movies);
 
@@ -143,5 +130,20 @@ function filter(category) {
 function showAll() {
   displayItems(movies);
 }
+
+document.querySelector(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+document.querySelector(".all").addEventListener("click", showAll);
+document.querySelector(".horror").addEventListener("click", () => filter("Horror"));
+document.querySelector(".pixar").addEventListener("click", () => filter("Pixar") );
+
+
 
 
