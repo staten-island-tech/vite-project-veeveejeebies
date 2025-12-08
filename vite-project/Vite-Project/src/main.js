@@ -143,7 +143,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 document.querySelector(".all").addEventListener("click", showAll);
 document.querySelector(".horror").addEventListener("click", () => filter("Horror"));
 document.querySelector(".pixar").addEventListener("click", () => filter("Pixar") );
-
-
+document.querySelector(".disney").addEventListener("click", () => filter("Disney") );
+document.querySelector(".super").addEventListener("click", () => filter("Superhero") );
 
 

@@ -19,7 +19,7 @@ html, body {
   --light-pink: #fcbfbf;
   --button-border: #3f0000;
   --amazing: #fedcee;
-
+  --button-hover: #780905;
   --primary: var(--black);
   --secondary: var(--maroon);
 }
@@ -27,13 +27,15 @@ html, body {
 .cool {
   --primary: var(--black);
   --secondary: var(--button-color);
-  --button-border: var(--button-border)
+  --button-border: var(--button-border);
+  --button-hover: var(--button-hover);
 }
 
 .warm {
   --primary: var(--white);
   --secondary: var(--light-pink);
-  --button-border:var(var(--amazing));
+  --button-border:var(--amazing);
+  --button-hover: var(--button-hover);
 }
 
 .hero {
@@ -53,21 +55,16 @@ html, body {
   color: var(--secondary);
 }
 
+
+
 h1 {
  
   font-family: "Sigmar", sans-serif;
-  padding-bottom: 10px;
+  
   font-size: 100px;
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
-h2 {
-  font-family: "Sigmar", sans-serif;
-  padding-bottom: 10px;
-  font-size: 30px;
-  color: var(--maroon); 
-  margin-top: 0;
+  background-color: var(--secondary);
+  color: var(--primary); 
+  
 }
 
 
@@ -86,17 +83,33 @@ img {
   width: 100%;
   text-align: center;
 }
-
-.all {
+.btn {
   background-color: var(--secondary);
   color: var(--primary); 
-    border-color: #3f0000;
+    border-color: var(--primary);
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-     font-family: "Creepster";
+     font-family: "Titan One";
+    font-weight: 400px;
+    font-style: normal;
+  
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+}
+.all {
+  background-color: var(--secondary);
+  color: var(--primary); 
+    border-color: var(--primary);
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 25px; 
+     font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
@@ -107,7 +120,7 @@ img {
 .horror {
   background-color: var(--secondary);
   color: var(--primary); 
-     --button-border: var(--primary);
+    border-color: var(--primary);
      
     padding: 10px 20px; 
     text-align: center; 
@@ -125,14 +138,14 @@ img {
 .disney {
   background-color: var(--secondary);
   color: var(--primary); 
-    border-color: #3f0000;
+     border-color: var(--primary);
      
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-     font-family: "Creepster";
+     font-family: "Mouse Memoirs";
     font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
@@ -143,14 +156,14 @@ img {
 .pixar {
   background-color: var(--secondary);
   color: var(--primary); 
-    border-color: #3f0000;
+     border-color: var(--primary);
      
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-     font-family: "Creepster";
+     font-family: "Tangerine";
     font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
@@ -161,14 +174,14 @@ img {
 .super {
   background-color: var(--secondary);
   color: var(--primary); 
-    border-color: #3f0000;
+     border-color: var(--primary);
      
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 25px; 
-     font-family: "Creepster";
+     font-family: "Bangers";
     font-weight: 400px;
     font-style: normal;
     margin: 4px 2px; 
@@ -177,43 +190,45 @@ img {
     transition: background-color 0.5s ease;
 }
 .addMovie {
-    background-color: #d40000; 
-    border-color: #3f0000;
-    color: rgb(255, 180, 180); 
+  background-color: var(--secondary);
+  color: var(--primary); 
+   border-color: var(--primary);
+     
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
-    font-size: 15px; 
-    font-family: "Sigmar", sans-serif;
-    margin-top: 15px;
-    
+    font-size: 25px; 
+     font-family: "Titan One";
+    font-weight: 400px;
+    font-style: normal;
+    margin: 4px 2px; 
     cursor: pointer; 
     border-radius: 50px; 
     transition: background-color 0.5s ease;
     
 }
 .addMovie:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
 .all:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
 .horror:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
 .disney:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
 .pixar:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
 .super:hover {
-  background-color: #a00000;
+  background-color: #ee7878;
   transition: ease-in;
 }
