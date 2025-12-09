@@ -142,7 +142,7 @@ document.querySelector(".btn").addEventListener("click", function () {
 });
 function addToWatch () {
   const buttons = document.querySelectorAll(".addWatched");
-const movieContainer = document.querySelector(".cart-total");
+const movieContainer = document.querySelector("");
 buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () { 
       const movie = movies[index];
