@@ -191,7 +191,7 @@ img {
     border-radius: 50px; 
     transition: background-color 0.5s ease;
 }
-.addMovie {
+.addWatched {
   background-color: var(--secondary);
   color: var(--primary); 
    border-color: var(--primary);
@@ -210,7 +210,31 @@ img {
     transition: background-color 0.5s ease;
     
 }
-.addMovie:hover {
+.addNot {
+  background-color: var(--secondary);
+  color: var(--primary); 
+   border-color: var(--primary);
+     transition: ease-in;
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 25px; 
+     font-family: "Titan One";
+    font-weight: 400px;
+    font-style: normal;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+    
+}
+.addWatched:hover {
+  background-color: #ee7878;
+  transition: ease-in;
+}
+
+.addNot:hover {
   background-color: #ee7878;
   transition: ease-in;
 }

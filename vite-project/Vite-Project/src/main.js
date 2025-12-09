@@ -111,8 +111,8 @@ function displayItems(list) {
           <h1 class="title">${movie.name}</h1>
           <img src="${movie.image}" alt="${movie.alt}">
           <div class="buttons">
-            <button class="addMovie">Add to Watchlist</button>
-            <button class="addMovie">Already Watched</button>
+            <button class="addWatched">Add to Watchlist</button>
+            <button class="addNot">Already Watched</button>
           </div>
         </div>
       `
@@ -140,10 +140,20 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
+function addToWatch () {
+  const buttons = document.querySelectorAll(".addWatched");
+const movieContainer = document.querySelector(".cart-total");
+buttons.forEach((btn, index) => {
+    btn.addEventListener("click", function () { 
+      const movie = movies[index];
+      movieContainer.insertAdjacentHTML(
+        "beforeend",
+        `<p>Added: ${movie.name} (${movie.category})</p>` 
+      );
+    });
+  });
+}
 
-document.querySelector(".btn").addEventListener("click", function() {
-  document.querySelector("myButton").textContent = "Dark Mode";
-});
 
 document.querySelector(".all").addEventListener("click", showAll);
 document.querySelector(".horror").addEventListener("click", () => filter("Horror"));
@@ -152,3 +162,4 @@ document.querySelector(".disney").addEventListener("click", () => filter("Disney
 document.querySelector(".super").addEventListener("click", () => filter("Superhero") );
 
 
+addToWatch();
