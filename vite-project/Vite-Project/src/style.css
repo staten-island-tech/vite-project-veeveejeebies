@@ -50,7 +50,7 @@ html, body {
 .title {
   font-family: "Sigmar", sans-serif;
   padding-bottom: 10px;
-  font-size: 45px;
+  font-size: 70px;
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -58,12 +58,12 @@ html, body {
 
 
 h1 {
- 
+ transition: ease-in;
   font-family: "Sigmar", sans-serif;
-  
+   margin: 0;
   font-size: 100px;
-  background-color: var(--primary);
-  color: var(--primary); 
+   background-color: var(--primary);
+  color: var(--secondary);
   
 }
 
@@ -123,7 +123,7 @@ img {
   background-color: var(--secondary);
   color: var(--primary); 
     border-color: var(--primary);
-     
+     transition: ease-in;
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
@@ -141,7 +141,7 @@ img {
   background-color: var(--secondary);
   color: var(--primary); 
      border-color: var(--primary);
-     
+     transition: ease-in;
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
@@ -159,7 +159,7 @@ img {
   background-color: var(--secondary);
   color: var(--primary); 
      border-color: var(--primary);
-     
+     transition: ease-in;
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
@@ -177,7 +177,7 @@ img {
   background-color: var(--secondary);
   color: var(--primary); 
      border-color: var(--primary);
-     
+     transition: ease-in;
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
@@ -195,7 +195,7 @@ img {
   background-color: var(--secondary);
   color: var(--primary); 
    border-color: var(--primary);
-     
+     transition: ease-in;
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
