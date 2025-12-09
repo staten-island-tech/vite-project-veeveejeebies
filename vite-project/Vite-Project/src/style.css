@@ -62,7 +62,7 @@ h1 {
   font-family: "Sigmar", sans-serif;
   
   font-size: 100px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: var(--primary); 
   
 }
@@ -95,7 +95,9 @@ img {
      font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
-  
+    position: absolute;
+    top: 20px;
+    left: 50px; 
     cursor: pointer; 
     border-radius: 50px; 
     transition: background-color 0.5s ease;

@@ -140,6 +140,11 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
+
+document.querySelector(".btn").addEventListener("click", function() {
+  document.querySelector("myButton").textContent = "Dark Mode";
+});
+
 document.querySelector(".all").addEventListener("click", showAll);
 document.querySelector(".horror").addEventListener("click", () => filter("Horror"));
 document.querySelector(".pixar").addEventListener("click", () => filter("Pixar") );
