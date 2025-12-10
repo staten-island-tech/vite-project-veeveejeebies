@@ -258,3 +258,14 @@ img {
   background-color: #ee7878;
   transition: ease-in;
 }
+
+.btn:hover {
+  background-color: #ee7878;
+  transition: ease-in;
+}
+
+.watched {
+  font-size: medium;
+    display: flex;       
+  justify-content: start;
+}

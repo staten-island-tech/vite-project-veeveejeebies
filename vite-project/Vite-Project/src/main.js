@@ -114,22 +114,12 @@ function displayItems(list) {
             <button class="addWatched">Add to Watchlist</button>
             <button class="addNot">Already Watched</button>
           </div>
-        </div>
+        </div>                
       `
     );
   });
 }
 
-displayItems(movies);
-
-function filter(category) {
-  const filtered = movies.filter((movie) => movie.category === category);
-  displayItems(filtered);
-}
-
-function showAll() {
-  displayItems(movies);
-}
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
@@ -142,7 +132,20 @@ document.querySelector(".btn").addEventListener("click", function () {
 });
 function addToWatch () {
   const buttons = document.querySelectorAll(".addWatched");
-const movieContainer = document.querySelector("");
+const movieContainer = document.querySelector("btn");
+buttons.forEach((btn, index) => {
+    btn.addEventListener("click", function () { 
+      const movie = movies[movie];
+      movieContainer.insertAdjacentHTML(
+        "beforeend",
+        `<p>Added: ${movie.name} (${movie.category})</p>` 
+      );
+    });
+  });
+}
+function didntWatch () {
+  const buttons = document.querySelectorAll(".addNot");
+const movieContainer = document.querySelector("btn");
 buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () { 
       const movie = movies[index];
@@ -152,6 +155,16 @@ buttons.forEach((btn, index) => {
       );
     });
   });
+}
+displayItems(movies);
+
+function filter(category) {
+  const filtered = movies.filter((movie) => movie.category === category);
+  displayItems(filtered);
+}
+
+function showAll() {
+  displayItems(movies);
 }
 
 
@@ -163,3 +176,4 @@ document.querySelector(".super").addEventListener("click", () => filter("Superhe
 
 
 addToWatch();
+didntWatch();
