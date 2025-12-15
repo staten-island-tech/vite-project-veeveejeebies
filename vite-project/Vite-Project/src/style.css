@@ -82,6 +82,7 @@ img {
 .main {
   width: 100%;
   text-align: center;
+   padding-bottom: 200px;
 }
 .btn {
   background-color: var(--secondary);
@@ -264,8 +265,11 @@ img {
   transition: ease-in;
 }
 
-.watched {
-  font-size: medium;
-    display: flex;       
-  justify-content: start;
+.h2 {
+  text-align: left;
+
+}
+
+.h3 {
+  text-align: right;
 }
