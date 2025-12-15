@@ -1,5 +1,6 @@
 import "./style.css";
 
+
 const movies = [
   {
     name: "It",
@@ -99,7 +100,9 @@ const movies = [
   },
 ];
 
+
 const main = document.querySelector(".main");
+
 
 function displayItems(list) {
   main.innerHTML = "";
@@ -121,6 +124,8 @@ function displayItems(list) {
 }
 
 
+
+
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
@@ -130,42 +135,48 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
-function addToWatch () {
+function addToWatch() {
   const buttons = document.querySelectorAll(".addWatched");
-const movieContainer = document.querySelector("btn");
-buttons.forEach((btn, index) => {
-    btn.addEventListener("click", function () { 
-      const movie = movies[movie];
-      movieContainer.insertAdjacentHTML(
-        "beforeend",
-        `<p>Added: ${movie.name} (${movie.category})</p>` 
-      );
-    });
-  });
-}
-function didntWatch () {
-  const buttons = document.querySelectorAll(".addNot");
-const movieContainer = document.querySelector("btn");
-buttons.forEach((btn, index) => {
-    btn.addEventListener("click", function () { 
+  const movieContainer = document.querySelector(".watched");
+
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
       const movie = movies[index];
+
       movieContainer.insertAdjacentHTML(
         "beforeend",
-        `<p>Added: ${movie.name} (${movie.category})</p>` 
+        `<p>${movie.name} (${movie.category})</p>`
       );
     });
   });
 }
-displayItems(movies);
+function didntWatch() {
+  const buttons = document.querySelectorAll(".addNot");
+  const movieContainer = document.querySelector(".notWatched");
+
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      const movie = movies[index];
+
+      movieContainer.insertAdjacentHTML(
+        "beforeend",
+        `<p>${movie.name} (${movie.category})</p>`
+      );
+    });
+  });
+}
 
 function filter(category) {
   const filtered = movies.filter((movie) => movie.category === category);
   displayItems(filtered);
 }
 
+
 function showAll() {
   displayItems(movies);
 }
+
+
 
 
 document.querySelector(".all").addEventListener("click", showAll);
@@ -175,5 +186,8 @@ document.querySelector(".disney").addEventListener("click", () => filter("Disney
 document.querySelector(".super").addEventListener("click", () => filter("Superhero") );
 
 
+
+displayItems(movies);
 addToWatch();
 didntWatch();
+
