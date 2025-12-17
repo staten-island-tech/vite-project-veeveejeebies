@@ -106,6 +106,7 @@ const main = document.querySelector(".main");
 
 function displayItems(list) {
   main.innerHTML = "";
+
   list.forEach((movie) => {
     main.insertAdjacentHTML(
       "beforeend",
@@ -121,6 +122,8 @@ function displayItems(list) {
       `
     );
   });
+  addToWatch(list);
+  didntWatch(list);
 }
 
 
@@ -135,13 +138,13 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
-function addToWatch() {
+function addToWatch(list) {
   const buttons = document.querySelectorAll(".addWatched");
   const movieContainer = document.querySelector(".watched");
 
   buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
-      const movie = movies[index];
+      const movie = list[index];
 
       movieContainer.insertAdjacentHTML(
         "beforeend",
@@ -150,13 +153,14 @@ function addToWatch() {
     });
   });
 }
-function didntWatch() {
+
+function didntWatch(list) {
   const buttons = document.querySelectorAll(".addNot");
   const movieContainer = document.querySelector(".notWatched");
 
   buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
-      const movie = movies[index];
+      const movie = list[index];
 
       movieContainer.insertAdjacentHTML(
         "beforeend",
@@ -185,9 +189,25 @@ document.querySelector(".pixar").addEventListener("click", () => filter("Pixar")
 document.querySelector(".disney").addEventListener("click", () => filter("Disney") );
 document.querySelector(".super").addEventListener("click", () => filter("Superhero") );
 
+document.querySelector(".addMovie").addEventListener("click", function () {
+  const name = document.querySelector(".movieName").value;
+  const category = document.querySelector(".movieCategory").value;
+  const image = document.querySelector(".movieImage").value;
 
+  if (name === "" || category === "" || image === "") return;     
+
+  movies[movies.length] = { name: name, category: category, image: image, alt: name };
+
+  displayItems(movies);
+
+
+  document.querySelector(".movieName").value = "";
+  document.querySelector(".movieCategory").value = "";
+  document.querySelector(".movieImage").value = "";
+});
 
 displayItems(movies);
-addToWatch();
-didntWatch();
+
+
+
 
