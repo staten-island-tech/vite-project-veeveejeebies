@@ -1,11 +1,9 @@
 import "./style.css";
-
-
 const movies = [
   {
     name: "It",
     category: "Horror",
-    image: "/img/It.jpg",
+    image: "img/It.jpg",
     alt: "It",
   },
   {
@@ -101,11 +99,16 @@ const movies = [
 ];
 
 
+
+
 const main = document.querySelector(".main");
+
+
 
 
 function displayItems(list) {
   main.innerHTML = "";
+
 
   list.forEach((movie) => {
     main.insertAdjacentHTML(
@@ -129,6 +132,10 @@ function displayItems(list) {
 
 
 
+
+
+
+
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
@@ -142,9 +149,11 @@ function addToWatch(list) {
   const buttons = document.querySelectorAll(".addWatched");
   const movieContainer = document.querySelector(".watched");
 
+
   buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
       const movie = list[index];
+
 
       movieContainer.insertAdjacentHTML(
         "beforeend",
@@ -153,14 +162,17 @@ function addToWatch(list) {
     });
   });
 }
+
 
 function didntWatch(list) {
   const buttons = document.querySelectorAll(".addNot");
   const movieContainer = document.querySelector(".notWatched");
 
+
   buttons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
       const movie = list[index];
+
 
       movieContainer.insertAdjacentHTML(
         "beforeend",
@@ -169,6 +181,7 @@ function didntWatch(list) {
     });
   });
 }
+
 
 function filter(category) {
   const filtered = movies.filter((movie) => movie.category === category);
@@ -176,9 +189,15 @@ function filter(category) {
 }
 
 
+
+
 function showAll() {
   displayItems(movies);
 }
+
+
+
+
 
 
 
@@ -189,16 +208,22 @@ document.querySelector(".pixar").addEventListener("click", () => filter("Pixar")
 document.querySelector(".disney").addEventListener("click", () => filter("Disney") );
 document.querySelector(".super").addEventListener("click", () => filter("Superhero") );
 
+
 document.querySelector(".addMovie").addEventListener("click", function () {
   const name = document.querySelector(".movieName").value;
   const category = document.querySelector(".movieCategory").value;
   const image = document.querySelector(".movieImage").value;
 
-  if (name === "" || category === "" || image === "") return;     
+
+  if (name === "" || category === "" || image === "") return;    
+
 
   movies[movies.length] = { name: name, category: category, image: image, alt: name };
 
+
   displayItems(movies);
+
+
 
 
   document.querySelector(".movieName").value = "";
@@ -206,8 +231,7 @@ document.querySelector(".addMovie").addEventListener("click", function () {
   document.querySelector(".movieImage").value = "";
 });
 
+
 displayItems(movies);
-
-
 
 

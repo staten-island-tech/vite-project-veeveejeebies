@@ -1,3 +1,4 @@
+
 html, body {
   text-align: center;
    background-color: var(--primary);
@@ -7,7 +8,7 @@ html, body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
-  
+ 
 }
 :root {
   --blood-red: #7a000a;
@@ -24,12 +25,14 @@ html, body {
   --secondary: var(--maroon);
 }
 
+
 .cool {
   --primary: var(--black);
   --secondary: var(--button-color);
   --button-border: var(--button-border);
   --button-hover: var(--button-hover);
 }
+
 
 .warm {
   --primary: var(--white);
@@ -38,10 +41,16 @@ html, body {
   --button-hover: var(--button-hover);
 }
 
+
 .hero {
   background-color: var(--primary);
   color: var(--secondary);
 }
+
+
+
+
+
 
 
 
@@ -57,6 +66,9 @@ html, body {
 
 
 
+
+
+
 h1 {
  transition: ease-in;
   font-family: "Sigmar", sans-serif;
@@ -64,8 +76,10 @@ h1 {
   font-size: 100px;
    background-color: var(--primary);
   color: var(--secondary);
-  
+ 
 }
+
+
 
 
 img {
@@ -79,6 +93,10 @@ img {
 
 
 
+
+
+
+
 .main {
   width: 100%;
   text-align: center;
@@ -86,154 +104,155 @@ img {
 }
 .btn {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
     border-color: var(--primary);
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
     position: absolute;
     top: 20px;
-    left: 50px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    left: 50px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .all {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
     border-color: var(--primary);
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .horror {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
     border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Creepster";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .disney {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
      border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Mouse Memoirs";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .pixar {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
      border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Tangerine";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .super {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
      border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Bangers";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
 }
 .addWatched {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
    border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
-    
+   
 }
 .addNot {
   background-color: var(--secondary);
-  color: var(--primary); 
+  color: var(--primary);
    border-color: var(--primary);
      transition: ease-in;
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 25px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
      font-family: "Titan One";
     font-weight: 400px;
     font-style: normal;
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 50px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
     transition: background-color 0.5s ease;
-    
+   
 }
 .addWatched:hover {
   background-color: #ee7878;
   transition: ease-in;
 }
+
 
 .addNot:hover {
   background-color: #ee7878;
@@ -260,16 +279,23 @@ img {
   transition: ease-in;
 }
 
+
 .btn:hover {
   background-color: #ee7878;
   transition: ease-in;
 }
 
+
 .h2 {
   text-align: left;
 
+
 }
+
 
 .h3 {
   text-align: right;
 }
+
+
+
